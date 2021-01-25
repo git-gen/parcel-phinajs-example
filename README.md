@@ -23,3 +23,8 @@ $ yarn dev
 ```bash
 $ yarn build
 ```
+
+## memo
+
+- yarnパッケージ npmパッケージは更新されていないようでバグがある
+- CDNを使用
