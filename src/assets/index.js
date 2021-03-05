@@ -6,11 +6,7 @@ phina.define('MainScene', {
   superClass: 'DisplayScene',
   init: function() {
     this.superInit();
-    this.backgroundColor = '#444';
-    this.label = Label('Hello, phina.js!').addChildTo(this);
-    this.label.x = this.gridX.center();
-    this.label.y = this.gridY.center();
-    this.label.fill = 'white';
+    this.backgroundColor = '#fff';
   },
 });
 
@@ -18,7 +14,8 @@ phina.define('MainScene', {
 phina.main(function() {
   // アプリケーション生成
   var app = GameApp({
-    startLabel: 'main',
+    startLabel: 'title',
+    title: 'ゲーム',
   });
   // アプリケーション実行
   app.run();
